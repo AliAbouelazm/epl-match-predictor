@@ -16,6 +16,11 @@ logger = logging.getLogger(__name__)
 
 def load_trained_model():
     """Load the trained XGBoost model."""
+    if not MODEL_FILE.exists():
+        raise FileNotFoundError(
+            f"Model file not found at {MODEL_FILE}. "
+            "Please train the model first by running: python create_model.py"
+        )
     return joblib.load(MODEL_FILE)
 
 

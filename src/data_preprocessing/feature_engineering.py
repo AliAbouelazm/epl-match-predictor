@@ -152,7 +152,7 @@ def build_feature_matrix(clean_data: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Ser
     y = pd.Series(targets, name="result")
     
     X.to_parquet(X_FEATURES_FILE, index=False)
-    y.to_parquet(Y_TARGET_FILE, index=False)
+    y.to_frame().to_parquet(Y_TARGET_FILE, index=False)
     
     logger.info(f"Built feature matrix: {X.shape[0]} samples, {X.shape[1]} features")
     logger.info(f"Saved features to {X_FEATURES_FILE}")
