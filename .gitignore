@@ -38,8 +38,9 @@ Thumbs.db
 
 *.log
 
-*.pkl
 *.joblib
+# Allow model file for deployment
+!models/xgboost_epl_match_outcome.pkl
 
 data/raw/*.csv
 !data/raw/.gitkeep
