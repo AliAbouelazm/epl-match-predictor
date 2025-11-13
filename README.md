@@ -2,7 +2,7 @@
 
 An end-to-end machine learning project that predicts EPL match outcomes (Home Win, Draw, Away Win) using XGBoost. The project demonstrates data collection through web scraping, data preprocessing, feature engineering, model training, and an interactive Streamlit visualization.
 
-## 🚀 Live Demo
+## Live Demo
 
 Try the interactive Streamlit app: **[https://pl-predict.streamlit.app/](https://pl-predict.streamlit.app/)**
 
